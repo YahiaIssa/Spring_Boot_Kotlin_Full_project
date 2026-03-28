@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-boot-basics-kotlin1
+  datasource:
+    url : "jdbc:postgresql://db.txzxxbcaahmozwvgrief.supabase.co:5432/postgres"
+    username : "postgres"
+    password: ${POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+quotes:
+  search:
+    ignore-case: true
+    min_length: 3
+  validation:
+    min-content-length: 5
+    max-content-length: 500
+    require-author: true
+    allowed-categories:
+      - "motivational"
+      - "funny"
+      - "tech"
+      - "wisdom"
